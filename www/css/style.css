@@ -22,15 +22,11 @@ nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
 /*end reset*/
 /****-----start-body----****/
-
 body{
-	
+	background: #65C6BB;
   font-family: 'Open Sans', sans-serif;
-  }
-.cabecera {
-  background: #65C6BB;
 }
-body a,.submit input[type="submit"]{
+body a,.submit input[type="submit"],.new h3 a,.new h4 a{
 	transition: 0.1s all;
 	-webkit-transition: 0.1s all;
 	-moz-transition: 0.1s all;
@@ -40,16 +36,17 @@ body h1 {
   color:#fff;
   text-align: center;
   padding: 1em 0;
-  font-size: 3.9em;
+  font-size: 2.9em;
 }
 .menu h2{
   color: #fff;
   text-align: center;
   padding: 1em 0;
-  font-size: 2.6em;
-  font-weight: 500;
+  font-size: 1.6em;
+  font-weight: 300;
 }
 .menu{
+  width:28%;
   margin:0 auto;
     text-align: center;
     background: #323542;
@@ -68,6 +65,9 @@ body h1 {
   background: #5b5c61;
   height: 1px;
   width: 20%;
+}
+form {
+   padding: 0% 1%;
 }
 /*-----*/
 .button img {
@@ -100,19 +100,54 @@ input[type="submit"]:hover{
 
 }
 
+/*-----start-responsive-design------*/
+@media (max-width:1440px){
+  .menu{
+    width:90%;
+  }
+}
+@media (max-width:1366px){
+  .menu{
+  width:90%;
+}
 
-@media (max-width:2000px){
+.line span{
+  position: absolute;
+  top:10%;
+  left: 39%;
+  background: #5b5c61;
+  height: 1px;
+  width: 20%;
+}
+body h1 {
+  font-size: 2.6em;
+}
+  	
+}
+@media (max-width:1280px){
+  .menu {
+  width: 90%;
+  }
+  
+}
+@media (max-width:1024px){
+  .menu {
+  width: 90%;
+}
+ 
+}
+@media (max-width:768px){
   body h1 {
-  font-size: 3.4em;
+  font-size: 2.4em;
   }
   .button img {
   margin: 2em 0;
-  
+  width: 59%;
   border-radius:50%;
 }
 .menu h2 {
   padding: 0.8em 0;
-  font-size: 2.6em;
+  font-size: 1.6em;
 }
 .line span {
   top: 10%;
@@ -120,34 +155,42 @@ input[type="submit"]:hover{
   height: 1px;
   width: 20%;
 }
-
+.menu {
+    width: 90%;
+}
 }
 @media (max-width:640px){
   body h1 {
-  font-size: 3.1em;
+  font-size: 2.1em;
 }
-
+ .menu {
+  width: 90%;
+}
 
 }
 @media (max-width:480px){
   
   .menu {
+  width: 90%;
   padding: 2em 1em 1em 1em;
 }
-  
+  form {
+  width: 82%;
+  margin: 0 auto;
+}
 }
 @media (max-width:320px){
   .menu {
-
+  width: 87%;
   padding: 2em 1em 1em 1em;
 }
   body h1 {
-  font-size: 2.5em;
+  font-size: 1.5em;
 }
 
 .menu h2 {
   padding: 0.5em 0;
-  font-size: 2.2em;
+  font-size: 1.2em;
 }
 
 .line span {
@@ -163,4 +206,8 @@ input[type="submit"]:hover{
   font-size: 18px;
   padding: 11px 11px;
   }
+  form {
+  width: 87%;
+  margin: 0 auto;
+}
 }
